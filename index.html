@@ -5,42 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Proyecto JavaScript</title>
 </head>
 
 <body>
 
-    <section class="container">
+    <nav class="navbar">
+        <img src="/Img/269979809_113777511163915_3449215685483840539_n.jpg" alt="active">
+    </nav>
 
-        <h1>Hola, que bien te ves! </h1>
+    <section class="main-container">
+        <section class="container1">
 
-        <p>Nombre:</p>
-        <input type="text" name="" id="nombre" />
+            <h1>Nueva Inscripcion</h1>
 
-        <p>Apellido:</p>
-        <input type="text" name="" id="apellido" />
+            <input type="text" name="" id="nombre" placeholder="Nombre:" />
 
-        <p>Sexo:</p>
-        <select id="sexo">
-            <option value="masculino">Masculino</option>
-            <option value="femenino">Femenino</option>
-            <option value="otro">Otro</option>
-        </select>
+            <input type="text" name="" id="apellido" placeholder="Apellido:" />
 
-        <p>Edad:</p>
-        <input type="number" name="" id="edad" />
+            <select id="sexo" name="">
+                <option value="" disabled selected>Sexo</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
 
-        <p>Tipo de pase:</p>
-        <input type="text" name="" id="tdp" />
+            <input type="number" name="" id="edad" placeholder="Edad:" />
 
-        <button id="btn">Agregar</button>
+            <select id="tdp">
+                <option value="" disabled selected>Tipo de Pase</option>
+                <option value="1600">Ocho Clases - $1600</option>
+                <option value="1800">Doce Clases - $1800</option>
+                <option value="2200">Pase Libre - $2200</option>
+            </select>
 
+            <button id="btn">Agregar</button>
+
+        </section>
     </section>
+
+    <p>Total de Alumnos Inscritos: <span id="contador">0</span></p>
 
     <ul id="list"></ul>
 
-    <script src="./index.js"></script>
+    <script src="./JavaScript/index.js"></script>
 </body>
 
 </html>
